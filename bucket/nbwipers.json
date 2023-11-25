@@ -1,0 +1,38 @@
+{
+    "version": "0.1.0",
+    "description": "Wipe clean your Jupyter Notebooks!",
+    "homepage": "https://github.com/felixgwilliams/nbwipers",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/felixgwilliams/nbwipers/releases/download/v0.1.0/nbwipers-x86_64-pc-windows-msvc.zip",
+            "hash": "02e7d59eac8ddbf4888487ef0293fa5cd0c77043e601c4521b52a3bef0108102"
+        },
+        "32bit": {
+            "url": "https://github.com/felixgwilliams/nbwipers/releases/download/v0.1.0/nbwipers-i686-pc-windows-msvc.zip",
+            "hash": "bdd8e59a8053c71afa8ba6570e54389d7efd26aca4af3fb99818d706a4641b9f"
+        },
+        "arm64": {
+            "url": "https://github.com/felixgwilliams/nbwipers/releases/download/v0.1.0/nbwipers-aarch64-pc-windows-msvc.zip",
+            "hash": "e321eadb11723e21916b6ecc60b174220a39728ca139ac1ceb7ba504c1133413"
+        }
+    },
+    "bin": "nbwipers.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/felixgwilliams/nbwipers/releases/download/v$version/nbwipers-x86_64-pc-windows-msvc.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/felixgwilliams/nbwipers/releases/download/v$version/nbwipers-i686-pc-windows-msvc.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/felixgwilliams/nbwipers/releases/download/v$version/nbwipers-aarch64-pc-windows-msvc.zip"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
